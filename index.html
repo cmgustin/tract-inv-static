@@ -39,9 +39,15 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-
       <nav class="navbar navbar-expand navbar-light bg-light border-bottom">
-
+        <div class="col-6">
+          <div class="input-group">
+             <div class="input-group-prepend">
+               <span class="input-group-text bg-white border-right-0 pr-1"><i class="fa fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control border-left-0 pl-2" placeholder="Global system search...">
+          </div>
+        </div>
         <div id="navbarSupportedContent" class="navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown active">
@@ -60,9 +66,10 @@
         </div>
       </nav>
 
-      <div class="container-fluid">
-        <h1 class="mt-4">Dashboard</h1>
-        [Dashboard content goes here]
+      <div class="container-fluid p-4">
+        <h1>Dashboard</h1>
+        <a class="btn btn-primary" href="#">I'm a primary button!</a>
+        <a class="btn btn-secondary" href="#">I'm a secondary button!</a>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
