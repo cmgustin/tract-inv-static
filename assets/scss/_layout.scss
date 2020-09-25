@@ -1,15 +1,11 @@
-// Layout Style
+// Layout Styles
  #wrapper {
   overflow-x: hidden;
  }
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+  margin-left: -265px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -18,7 +14,7 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: 265px;
 }
 
 #page-content-wrapper {
@@ -29,7 +25,8 @@
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
+  
   #sidebar-wrapper {
     margin-left: 0;
   }
@@ -40,6 +37,24 @@
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
+    margin-left: -265px;
+  }
+}
+
+// Main Menu
+.main-menu {
+  
+  &__link {
+    text-transform: uppercase;
+    color: #e7e7e7;
+    letter-spacing: 1.125px;
+    font-size: 14px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #e7e7e7;
+      background: #333;
+    }
   }
 }

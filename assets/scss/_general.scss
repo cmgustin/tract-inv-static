@@ -1,1 +1,19 @@
 // General Style
+
+html {
+  // Normalize font appearance
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  // Set behavior for overflow scroll on mobile
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  // Responsive images by default
+  max-width: 100%;
+  height: auto;
+}
