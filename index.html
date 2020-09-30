@@ -67,14 +67,32 @@
       </nav>
 
       <div class="container-fluid p-4">
-        <h1>Dashboard</h1>
-        <a class="btn btn-primary" href="#">I'm a primary button!</a>
-        <a class="btn btn-secondary" href="#">I'm a secondary button!</a>
+        <h1>Page Heading 1</h1>
+        <h2>Page Heading 2</h2>
+        <h3>Page Heading 3</h3>
+        <h4>Page Heading 4</h4>
+        <h5>Page Heading 5</h5>
+        <h6>Page Heading 6</h6>
+        <p>Paragraph</p>
+        <p class="text-muted">Paragraph - text muted</p>
+        <a href="#">Basic Link</a>
 
 
+        <hr>
+        <h2>Buttons</h2>
+        <a class="btn btn-primary" href="#">Primary Button</a>
+        <a class="btn btn-primary disabled" aria-disabled="true" href="#">Primary Button Disabled</a>
+        <a class="btn btn-secondary" href="#">Secondary Button</a>
+        <a class="btn btn-secondary disabled" aria-disabled="true" href="#">Secondary Button Disabled</a>
+        <a class="btn btn-primary" href="#">Save</a>
+        <a class="btn btn-secondary" href="#">Cancel</a>
+
+        <hr>
+        <h2>Tables</h2>
         <table class="custom-table table-hover mt-4">
           <thead class="thead-light">
             <tr>
+              <th><input class="form-control" type="checkbox"></th>
               <th>Heading 1</th>
               <th>Heading 2</th>
               <th>Heading 3</th>
@@ -83,12 +101,144 @@
           
           <tbody>
             <tr>
+              <td><input class="form-control" type="checkbox"></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
+            <tr>
+              <td><input class="form-control" type="checkbox"></td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
+            <tr>
+              <td><input class="form-control" type="checkbox"></td>
               <td>1</td>
               <td>2</td>
               <td>3</td>
             </tr>
           </tbody>
         </table>
+
+        <hr>
+        <h2>Basic Form</h2>
+        <form>
+          <div class="row">
+            <div class="col-4 form-group">
+              <label>Label</label>
+              <input class="form-control" type="text" placeholder="Text input">
+            </div>
+
+            <div class="col-4 form-group">
+              <label>Label</label>
+              <input class="form-control" type="text" placeholder="Text input">
+            </div>
+
+            <div class="col-4 form-group">
+              <label>Label</label>
+              <input class="form-control" type="text" placeholder="Text input">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4 form-group">
+              <label>Label</label>
+              <select class="form-control">
+                <option selected disabled>Choose an option</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <label>Label</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <a href="#" class="btn btn-primary">Save</a>
+            </div>
+          </div>
+        </form>
+
+        <hr>
+        <h2>Card Form</h2>
+        <div class="card bg-light p-4">
+          <form>
+            <div class="row">
+              <div class="col-4 form-group">
+                <label>Label</label>
+                <input class="form-control" type="text" placeholder="Text input">
+              </div>
+
+              <div class="col-4 form-group">
+                <label>Label</label>
+                <input class="form-control" type="text" placeholder="Text input">
+              </div>
+
+              <div class="col-4 form-group">
+                <label>Label</label>
+                <input class="form-control" type="text" placeholder="Text input">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 form-group">
+                <label>Label</label>
+                <select class="form-control">
+                  <option selected disabled>Choose an option</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4">
+                <label>Label</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <a href="#" class="btn btn-primary">Save</a>
+            <a href="#" class="btn btn-secondary">Cancel</a>
+          </div>
+        </div>
+
+        <hr>
+        <h2>Badges</h2>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-light">Light</span>
+        <span class="badge badge-dark">Dark</span>
+
+        <hr>
+        <h2>Pill Badges</h2>
+        <span class="badge badge-pill badge-primary">Primary</span>
+        <span class="badge badge-pill badge-secondary">Secondary</span>
+        <span class="badge badge-pill badge-success">Success</span>
+        <span class="badge badge-pill badge-danger">Danger</span>
+        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge badge-pill badge-info">Info</span>
+        <span class="badge badge-pill badge-light">Light</span>
+        <span class="badge badge-pill badge-dark">Dark</span>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
