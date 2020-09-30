@@ -22,7 +22,7 @@ $black:    #000;
 // Grays - custom
 
 $gray-100: #f9f9f9; // $light
-$gray-200: #e9ecef;
+$gray-200: #f3f3f3; // table head
 $gray-300: #e7e7e7; // Border color
 $gray-400: #cecece; // Input border color
 $gray-500: #adb5bd;
@@ -56,9 +56,9 @@ $red:     #F93348; // custom
 $orange:  #fd7e14;
 $yellow:  #F5D200; // custom
 $green:   #B8FBCB; // custom
-$teal:    #0095A9; // $primary
 $cyan:    #17a2b8;
-
+$teal:    #0095A9; // $primary
+$teal-light: #E3F3F6; // table-hover-bg
 
 $primary:       $teal;
 // $secondary:     $gray-600;
@@ -96,31 +96,6 @@ $enable-deprecation-messages:                 true;
 // You can add more entries to the $spacers map, should you need more variation.
 
 $spacer: 1rem;
-// $spacers: ();
-// $spacers: map-merge(
-//   (
-//     0: 0,
-//     1: ($spacer * .25),
-//     2: ($spacer * .5),
-//     3: $spacer,
-//     4: ($spacer * 1.5),
-//     5: ($spacer * 3)
-//   ),
-//   $spacers
-// );
-
-// This variable affects the `.h-*` and `.w-*` classes.
-// $sizes: ();
-// $sizes: map-merge(
-//   (
-//     25: 25%,
-//     50: 50%,
-//     75: 75%,
-//     100: 100%,
-//     auto: auto
-//   ),
-//   $sizes
-// );
 
 
 // Body
@@ -218,7 +193,7 @@ $transition-collapse:         height .35s ease;
 
 // Typography
 
-$font-family-sans-serif:      'Lato', Helvetica, Arial, sans-serif;;
+$font-family-sans-serif:      'Lato', sans-serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 
@@ -226,11 +201,11 @@ $font-size-base:              1rem; // Assumes the browser default, typically `1
 $font-size-lg:                $font-size-base * 1.25;
 $font-size-sm:                $font-size-base * .875;
 
-$font-weight-lighter:         lighter;
+$font-weight-lighter:         100;
 $font-weight-light:           300;
 $font-weight-normal:          400;
 $font-weight-bold:            700;
-$font-weight-bolder:          bolder;
+$font-weight-bolder:          900;
 
 $font-weight-base:            $font-weight-normal;
 $line-height-base:            1.5;
@@ -298,7 +273,8 @@ $table-color:                 $body-color;
 $table-bg:                    null;
 $table-accent-bg:             rgba($black, .05);
 $table-hover-color:           $table-color;
-$table-hover-bg:              rgba($black, .075);
+// $table-hover-bg:              rgba($black, .075);
+$table-hover-bg:              $teal-light;
 $table-active-bg:             $table-hover-bg;
 
 $table-border-width:          $border-width;
@@ -620,8 +596,8 @@ $zindex-tooltip:                    1070;
 
 // Navs
 
-$nav-link-padding-y:                .5rem;
-$nav-link-padding-x:                1rem;
+$nav-link-padding-y:                .75rem;
+$nav-link-padding-x:                1.25rem;
 $nav-link-disabled-color:           $gray-600;
 
 $nav-tabs-border-color:             $gray-300;

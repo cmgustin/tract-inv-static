@@ -1,0 +1,6 @@
+// Custom styling classes
+
+.custom-table {
+  @extend .table;
+  @extend .table-bordered;
+}
