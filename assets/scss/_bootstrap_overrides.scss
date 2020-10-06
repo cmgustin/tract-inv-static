@@ -503,11 +503,9 @@ $custom-select-bg:                  $input-bg;
 $custom-select-disabled-bg:         $gray-200;
 $custom-select-bg-size:             8px 10px; // In pixels because image dimensions
 $custom-select-indicator-color:     $gray-800;
-$custom-select-indicator:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
-$custom-select-background:          escape-svg($custom-select-indicator) no-repeat right $custom-select-padding-x center / $custom-select-bg-size; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
+// $custom-select-indicator:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>");
+$custom-select-indicator:           url("data:image/svg+xml,<svg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M10.7929 0C11.2383 0 11.4614 0.538571 11.1464 0.853553L6.35355 5.64645C6.15829 5.84171 5.84171 5.84171 5.64645 5.64645L0.853554 0.853554C0.538571 0.538571 0.761654 0 1.20711 0H10.7929Z' fill='#{$custom-select-indicator-color}'/></svg>");
 
-$custom-select-feedback-icon-padding-right: add(1em * .75, (2 * $custom-select-padding-y * .75) + $custom-select-padding-x + $custom-select-indicator-padding);
-$custom-select-feedback-icon-position:      center right ($custom-select-padding-x + $custom-select-indicator-padding);
 $custom-select-feedback-icon-size:          $input-height-inner-half $input-height-inner-half;
 
 $custom-select-border-width:        $input-border-width;

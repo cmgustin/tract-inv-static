@@ -33,6 +33,13 @@
         <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Tickets</a></li>
         <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Trucks</a></li>
         <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Items</a></li>
+        <li class="main-menu__line"></li>
+        <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Reports &amp; Forms</a></li>
+        <li class="main-menu__line"></li>
+        <li class="nav-item main-menu__item"><a class="nav-link main-menu__link active" href="#"><i class="fa fa-user mr-3"></i> Commodities</a></li>
+        <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Products</a></li>
+        <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Companies</a></li>
+        <li class="nav-item main-menu__item"><a class="nav-link main-menu__link" href="#"><i class="fa fa-user mr-3"></i> Settings</a></li>
       </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -92,7 +99,12 @@
         <table class="custom-table table-hover mt-4">
           <thead class="thead-light">
             <tr>
-              <th><input class="form-control" type="checkbox"></th>
+              <th>
+                <div class="custom-control custom-checkbox">
+                  <input id="check1" type="checkbox" class="custom-control-input">
+                  <label for="check1" class="custom-control-label"></label>
+                </div>
+              </th>
               <th>Heading 1</th>
               <th>Heading 2</th>
               <th>Heading 3</th>
@@ -101,21 +113,36 @@
           
           <tbody>
             <tr>
-              <td><input class="form-control" type="checkbox"></td>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input id="check2" type="checkbox" class="custom-control-input">
+                  <label for="check2" class="custom-control-label"></label>
+                </div>
+              </td>
               <td>1</td>
               <td>2</td>
               <td>3</td>
             </tr>
 
             <tr>
-              <td><input class="form-control" type="checkbox"></td>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input id="check3" type="checkbox" class="custom-control-input">
+                  <label for="check3" class="custom-control-label"></label>
+                </div>
+              </td>
               <td>1</td>
               <td>2</td>
               <td>3</td>
             </tr>
 
             <tr>
-              <td><input class="form-control" type="checkbox"></td>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input id="check4" type="checkbox" class="custom-control-input">
+                  <label for="check4" class="custom-control-label"></label>
+                </div>
+              </td>
               <td>1</td>
               <td>2</td>
               <td>3</td>
@@ -146,7 +173,7 @@
           <div class="row">
             <div class="col-4 form-group">
               <label>Label</label>
-              <select class="form-control">
+              <select class="custom-select">
                 <option selected disabled>Choose an option</option>
                 <option>Option 1</option>
                 <option>Option 2</option>
@@ -193,8 +220,8 @@
             <div class="row">
               <div class="col-4 form-group">
                 <label>Label</label>
-                <select class="form-control">
-                  <option selected disabled>Choose an option</option>
+                <select class="custom-select" required>
+                  <option value="" selected disabled>Choose an option</option>
                   <option>Option 1</option>
                   <option>Option 2</option>
                   <option>Option 3</option>
@@ -216,6 +243,51 @@
             <a href="#" class="btn btn-primary">Save</a>
             <a href="#" class="btn btn-secondary">Cancel</a>
           </div>
+        </div>
+
+        <hr>
+        <h2>Custom Form Inputs</h2>
+
+        <h3>Switch</h3>
+        <div class="custom-control custom-switch mb-4">
+          <input type="checkbox" class="custom-control-input" id="switch1">
+          <label class="custom-control-label" for="switch1">Toggle me</label>
+        </div>
+
+        <h3>Checkbox</h3>
+        <div class="custom-control custom-checkbox mb-4">
+          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+          <label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+        </div>
+
+        <h3>Radio</h3>
+        <div class="custom-control custom-radio mb-4">
+          <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+          <label class="custom-control-label" for="customRadio">Custom radio</label>
+        </div>
+
+        <h3>Inline Radios</h3>
+        <div class="mb-4">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio1" name="example" value="customEx">
+            <label class="custom-control-label" for="customRadio1">Custom radio 1</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+            <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+          </div>
+        </div>
+
+        <h3>Range</h3>
+        <div class="mb-4">
+          <label for="customRange">Custom range</label>
+          <input type="range" class="custom-range" id="customRange" name="points1">
+        </div>
+
+        <h3>File Upload</h3>
+        <div class="custom-file mb-4">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Choose file</label>
         </div>
 
         <hr>
