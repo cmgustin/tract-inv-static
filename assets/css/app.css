@@ -4145,8 +4145,8 @@ input[type="button"].btn-block {
 .custom-switch .custom-control-label::after {
   top: calc(0.25rem + 2px);
   left: calc(-2.25rem + 2px);
-  width: subtract(1rem, 4px);
-  height: subtract(1rem, 4px);
+  width: calc(1rem - 4px);
+  height: calc(1rem - 4px);
   background-color: #adb5bd;
   border-radius: 0.5rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -5303,10 +5303,10 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+  margin-bottom: 0.75rem;
   list-style: none;
-  background-color: #f3f3f3;
+  background-color: none;
   border-radius: 0.25rem;
 }
 
@@ -5323,8 +5323,8 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #919191;
-  content: "/";
+  color: #cecece;
+  content: url("data:image/svg+xml,%3csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 9L5 5L1 1' stroke='%23cecece' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -5336,7 +5336,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-  color: #919191;
+  color: #5c5c5c;
 }
 
 .pagination {
@@ -5434,14 +5434,14 @@ input[type="button"].btn-block {
 
 .badge {
   display: inline-block;
-  padding: 0.25em 0.4em;
+  padding: 0.4em 0.75em;
   font-size: 75%;
   font-weight: 700;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 2px;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5469,9 +5469,9 @@ a.badge:hover, a.badge:focus {
 }
 
 .badge-pill {
-  padding-right: 0.6em;
-  padding-left: 0.6em;
-  border-radius: 10rem;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  border-radius: 12rem;
 }
 
 .badge-primary {
@@ -10868,6 +10868,12 @@ img {
 
 label {
   font-weight: 700;
+}
+
+.custom-label {
+  letter-spacing: .91px;
+  text-transform: uppercase;
+  color: #5c5c5c;
 }
 
 textarea {

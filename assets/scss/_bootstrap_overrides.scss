@@ -487,7 +487,7 @@ $custom-radio-indicator-icon-checked:           url("data:image/svg+xml,<svg xml
 
 $custom-switch-width:                           $custom-control-indicator-size * 1.75;
 $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2;
-$custom-switch-indicator-size:                  subtract($custom-control-indicator-size, $custom-control-indicator-border-width * 4);
+// $custom-switch-indicator-size:                  subtract($custom-control-indicator-size, $custom-control-indicator-border-width * 4);
 
 $custom-select-padding-y:           $input-padding-y;
 $custom-select-padding-x:           $input-padding-x;
@@ -822,17 +822,19 @@ $toast-header-border-color:         rgba(0, 0, 0, .05);
 
 $badge-font-size:                   75%;
 $badge-font-weight:                 $font-weight-bold;
-$badge-padding-y:                   .25em;
-$badge-padding-x:                   .4em;
-$badge-border-radius:               $border-radius;
+// $badge-padding-y:                   .25em;
+// $badge-padding-x:                   .4em;
+$badge-padding-y:                   .4em;
+$badge-padding-x:                   .75em;
+$badge-border-radius:               2px;
 
 $badge-transition:                  $btn-transition;
 $badge-focus-width:                 $input-btn-focus-width;
 
-$badge-pill-padding-x:              .6em;
+$badge-pill-padding-x:              .75em;
 // Use a higher than normal value to ensure completely rounded edges when
 // customizing padding or font-size on labels.
-$badge-pill-border-radius:          10rem;
+$badge-pill-border-radius:          12rem;
 
 
 // Modals
@@ -954,16 +956,16 @@ $figure-caption-color:              $gray-600;
 $breadcrumb-font-size:              null;
 
 $breadcrumb-padding-y:              .75rem;
-$breadcrumb-padding-x:              1rem;
+// $breadcrumb-padding-x:              1rem;
+$breadcrumb-padding-x:              0;
 $breadcrumb-item-padding:           .5rem;
 
-$breadcrumb-margin-bottom:          1rem;
+$breadcrumb-margin-bottom:          .75rem;
 
-$breadcrumb-bg:                     $gray-200;
-$breadcrumb-divider-color:          $gray-600;
-$breadcrumb-active-color:           $gray-600;
-$breadcrumb-divider:                quote("/");
-
+$breadcrumb-bg:                     none;
+$breadcrumb-divider-color:          $gray-400;
+$breadcrumb-active-color:           $gray-800;
+$breadcrumb-divider:                url("data:image/svg+xml,<svg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 9L5 5L1 1' stroke='#{$breadcrumb-divider-color}' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
 $breadcrumb-border-radius:          $border-radius;
 
 

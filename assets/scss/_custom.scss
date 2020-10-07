@@ -5,6 +5,12 @@ label {
   font-weight: $font-weight-bold;
 }
 
+.custom-label {
+  letter-spacing: .91px;
+  text-transform: uppercase;
+  color: $gray-800;
+}
+
 textarea {
   min-height: 120px;
 }
