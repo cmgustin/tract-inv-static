@@ -1,27 +1,65 @@
 // Custom styling classes
 
-label {
-  @extend .small;
-  font-weight: $font-weight-bold;
+// Menus
+.sub-menu {
+  @extend .navbar; 
+  @extend .navbar-expand; 
+  @extend .navbar-light; 
+  @extend .border-top;
+  @extend .border-bottom;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .nav-item {
+    &.active {
+      .nav-link {
+        border-bottom: 4px solid $primary;
+      }
+    }
+  }
+
+  .nav-link {
+    padding: 1.25rem 2rem !important;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    font-weight: $font-weight-bold;
+    transition: .25s border ease;
+
+    &:hover {
+      border-bottom: 4px solid rgba($primary, 0.4);
+      transition: .25s border ease;
+    }
+
+    &.active {
+      border-bottom: 4px solid $primary;
+    }
+  }
 }
 
+// Forms
 .custom-label {
   letter-spacing: .91px;
   text-transform: uppercase;
   color: $gray-800;
 }
 
-textarea {
-  min-height: 120px;
+.custom-control {
+  cursor: pointer;
+
+  input, label {
+    cursor: pointer;
+  }
 }
 
-// Consolidate the most common table classes into one class
+
+// Tables
 .custom-table {
   @extend .table;
   @extend .table-bordered;
 }
 
-// Override the bootstrap secondary button styles
+
+// Buttons
 .btn-secondary {
   background: transparent !important;
   color: $primary !important;

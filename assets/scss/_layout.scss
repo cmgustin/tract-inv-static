@@ -22,6 +22,12 @@
 
   .main-menu {
     width: $sidebar-width;
+
+    &__item {
+      &.active {
+        color: $white;
+      }
+    }
       
     &__link {
       @extend .text-uppercase;
@@ -39,6 +45,10 @@
       &:focus {
         color: $gray-300;
         background-color: $gray-900;
+      }
+
+      &.active {
+        color: $white;
       }
     }
 

@@ -17,3 +17,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+label {
+  @extend .small;
+  font-weight: $font-weight-bold;
+}
+
+textarea {
+  min-height: 120px;
+}
