@@ -24,17 +24,25 @@
     width: $sidebar-width;
 
     &__item {
+      @extend .nav-item;
+
       &.active {
-        color: $white;
+        
+        .main-menu__link {
+          color: $white;
+          background: $gray-900;
+        }
       }
     }
       
     &__link {
+      @extend .nav-link;
       @extend .text-uppercase;
       color: $gray-300;
       font-weight: $font-weight-bolder;
       letter-spacing: 1.13px;
       font-size: 0.78rem;
+      transition: $transition background;
 
       .fa {
         font-size: 1rem;
@@ -44,11 +52,13 @@
       &:active,
       &:focus {
         color: $gray-300;
-        background-color: $gray-900;
+        background-color: lighten($gray-900, 7%);
+        transition: $transition background;
       }
 
       &.active {
         color: $white;
+        background: $gray-900;
       }
     }
 

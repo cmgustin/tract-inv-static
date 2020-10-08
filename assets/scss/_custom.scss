@@ -23,11 +23,11 @@
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     font-weight: $font-weight-bold;
-    transition: .25s border ease;
+    transition: $transition border;
 
     &:hover {
       border-bottom: 4px solid rgba($primary, 0.4);
-      transition: .25s border ease;
+      transition: $transition border;
     }
 
     &.active {

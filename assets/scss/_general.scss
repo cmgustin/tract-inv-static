@@ -26,3 +26,11 @@ label {
 textarea {
   min-height: 120px;
 }
+
+a {
+  transition: $transition color;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
