@@ -1,6 +1,7 @@
 // Layout styles
 
 #wrapper {
+  @extend .d-flex;
   overflow-x: hidden;
 
   &.toggled {
@@ -12,6 +13,7 @@
 }
 
 #sidebar-wrapper {
+  @extend .bg-dark;
   min-height: 100vh;
   // margin-left: -265px;
   margin-left: (-$sidebar-width);
@@ -21,6 +23,8 @@
   }
 
   .main-menu {
+    @extend .nav;
+    @extend .flex-column;
     width: $sidebar-width;
 
     &__item {

@@ -1,6 +1,14 @@
 // Custom styling classes
 
 // Menus
+.page-header {
+  @extend .navbar;
+  @extend .navbar-expand;
+  @extend .navbar-light;
+  @extend .bg-light;
+  @extend .border-bottom;
+}
+
 .sub-menu {
   @extend .navbar; 
   @extend .navbar-expand; 
